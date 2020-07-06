@@ -34,7 +34,7 @@ The service can:
 
 ### Setting up the DB
 
-`$cd /url_shortener
+`$cd /url_shortener`
 >>> from url_shortener import create_app
 >>> from url_shortener.extensions import 
 >>> from url_shortener.models import Link
@@ -50,17 +50,18 @@ The service can:
 
 ### Running the service and urls
 
-start the flask server
-`$ flask run`
+#### start the flask server
+#### `$ flask run`
 
 ![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.38.29%20PM.png?raw=true)
 
-`http://127.0.0.1:5000/`
+#### `http://127.0.0.1:5000/`
 
 ![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.38.54%20PM.png?raw=true)
 
-`http://127.0.0.1:5000/f5hc`
-`http://127.0.0.1:5000/stats`
+#### `http://127.0.0.1:5000/f5hc`
+
+#### `http://127.0.0.1:5000/stats`
 
 ![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%205.41.13%20PM.png?raw=true)
 
