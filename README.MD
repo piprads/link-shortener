@@ -46,20 +46,28 @@ The service can:
 
 `$ sqlite3 url_shortener/db.sqlite3`
 
+![alt text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.34.55%20PM.png?raw=true)
+
 ### Running the service and urls
 
 start the flask server
-$ flask run
+`$ flask run`
 
-http://127.0.0.1:5000/
-http://127.0.0.1:5000/f5hc
-http://127.0.0.1:5000/stats
+![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.38.29%20PM.png?raw=true)
 
+`http://127.0.0.1:5000/`
+
+![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.38.54%20PM.png?raw=true)
+
+`http://127.0.0.1:5000/f5hc`
+`http://127.0.0.1:5000/stats`
+
+![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%205.41.13%20PM.png?raw=true)
 
 ### Running the app via CLI
 
-python click shorten "http://www.skillshare.com"
-python click stats "http://127.0.0.1:5000/f5hc"
+`python click shorten "http://www.skillshare.com"`
+`python click stats "http://127.0.0.1:5000/f5hc"`
 
 ## Follow-ups
 
