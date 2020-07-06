@@ -34,14 +34,32 @@ The service can:
 
 ### Setting up the DB
 
-path: /url_shortener
+`$cd /url_shortener
 >>> from url_shortener import create_app
 >>> from url_shortener.extensions import 
 >>> from url_shortener.models import Link
->>> db.create_all(app=create_app())
+>>> from url_shortener.models import User
+>>> from url_shortener.models import UserLinkClicks
+>>> db.create_all(app=create_app())`
 
-### Running the app via templates
+### Accessing the db
+
+`$ sqlite3 url_shortener/db.sqlite3`
+
+### Running the service and urls
+
+start the flask server
+$ flask run
+
+http://127.0.0.1:5000/
+http://127.0.0.1:5000/f5hc
+http://127.0.0.1:5000/stats
+
 
 ### Running the app via CLI
 
+python click shorten "http://www.skillshare.com"
+python click stats "http://127.0.0.1:5000/f5hc"
+
 ## Follow-ups
+
