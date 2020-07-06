@@ -8,6 +8,7 @@ def main():
     """
     pass
 
+# TODO: CLI is currently fully hardcoded and yet to be finished
 @main.command()
 @click.argument('shorten')
 def shorten(url):
