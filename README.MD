@@ -35,12 +35,12 @@ The service can:
 ### Setting up the DB
 
 `$cd /url_shortener`
->>> from url_shortener import create_app
->>> from url_shortener.extensions import 
->>> from url_shortener.models import Link
->>> from url_shortener.models import User
->>> from url_shortener.models import UserLinkClicks
->>> db.create_all(app=create_app())`
+`>>> from url_shortener import create_app`
+`>>> from url_shortener.extensions import `
+`>>> from url_shortener.models import Link`
+`>>> from url_shortener.models import User`
+`>>> from url_shortener.models import UserLinkClicks`
+`>>> db.create_all(app=create_app())`
 
 ### Accessing the db
 
@@ -51,6 +51,7 @@ The service can:
 ### Running the service and urls
 
 #### start the flask server
+
 #### `$ flask run`
 
 ![alt_text](https://github.com/piprads/link-shortener/blob/master/url_shortener/img/Screen%20Shot%202020-07-05%20at%2011.38.29%20PM.png?raw=true)
