@@ -6,13 +6,16 @@ from .models import User
 from .models import UserLinkClicks
 from .auth import requires_auth
 
+from .url_shorten_handler import url_shorten_handler
+
 short = Blueprint('short', __name__)
 
 @short.route('/<short_url>')
 def redirect_to_url(short_url):
     link = Link.query.filter_by(short_url=short_url).first_or_404()
 
-    link.visits = link.visits + 1
+    # link.visits = link.visits + 1
+    url_shorten_handler.update_data(link)
     db.session.commit()
 
     return redirect(link.original_url) 
