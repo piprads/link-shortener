@@ -14,6 +14,7 @@ This is a flask app which shortens a full url to a 4 char url and saves counts f
 * columns for metadata are are mentioned in the models.py but assumed they can be stored from request object
 * a very high level MVC have been followed; there are a number of TBDs in the current state of the app due to time constraint
 * No tests have been implemented
+* not focussing on any specific insights we are interested in; if there will be - db schema/ db type will be thought appropriately
 
 
 ## Current Status
@@ -73,3 +74,8 @@ The service can:
 
 ## Follow-ups
 
+* api-key would help in throttling users with quota
+* as we scale, making sure randon generated keys are unique can be challenging; one option could be to generate short_urls offline
+* calculating stats can be async processes done offline (based on the requirements) and can be incremented for new requests
+* there could be do different or same dbs for transactional and analytical needs
+* there are *many* opportunities of insights and personalization based on this data - skipping it here due to time constraints
