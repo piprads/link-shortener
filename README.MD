@@ -78,4 +78,10 @@ The service can:
 * as we scale, making sure randon generated keys are unique can be challenging; one option could be to generate short_urls offline
 * calculating stats can be async processes done offline (based on the requirements) and can be incremented for new requests
 * there could be do different or same dbs for transactional and analytical needs
-* there are *many* opportunities of insights and personalization based on this data - skipping it here due to time constraints
+* there are *many* opportunities of insights and recommendations based on this data - skipping it here due to time constraints
+
+For e.g. - some of the features contributing to link recommendations are:
+- users who commonly accessed link A also went to link B
+- links by user X were also accssed by user Y
+- links from specific regions, device, recently could be of common interest
+- top links from nearby users could be interesting to recommend
